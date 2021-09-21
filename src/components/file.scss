@@ -1,0 +1,18 @@
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+
+// .primary-color {
+//     color: white;
+//   }
+//   .navbar-default .navbar-brand {
+//       @extend .primary-color;
+//   }
+//   .navbar-default .navbar-nav > li > a,
+//   .navbar-default .navbar-brand {
+//       &:hover {
+//           @extend .primary-color;
+//       }
+//   }

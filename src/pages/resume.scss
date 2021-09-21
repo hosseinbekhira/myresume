@@ -1,0 +1,228 @@
+@import "../sassFiles";
+
+// Start Resume Style
+.resume-container {
+  background-color: $mainColor;
+  .sub-title-resume {
+    color: $whiteColor;
+    font-size: 40px;
+    font-family: $OswaldFont;
+    margin: 20px 60px 20px;
+    display: inline-block;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 8px solid $blueColor;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      padding-left: 10px;
+      margin-left: 75px;
+      border-bottom: 8px solid $yellowColor;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 34px;
+    }
+  }
+
+  .skills {
+    padding-top: 80px;
+    .container-circle {
+      background-color: $secondColor;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      .circle-progress {
+        margin: 30px auto 80px;
+      }
+    }
+  }
+
+  .education {
+    .container-education {
+      background-color: $secondColor;
+      .item-education {
+        display: flex;
+        padding: 20px 0px;
+        @media (max-width: 991.98px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        @keyframes shape-color {
+          0% {
+            background-color: $amaranthColor;
+          }
+          33% {
+            background-color: $greenColor;
+          }
+          66% {
+            background-color: $yellowColor;
+          }
+          100% {
+            background-color: $purpleColor;
+          }
+        }
+        .shape {
+          flex-basis: 5%;
+          background-color: $amaranthColor;
+          margin-right: 40px;
+          animation: shape-color 5s infinite reverse ease-out;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            background-color: $whiteColor;
+          }
+          @media (max-width: 991.98px) {
+            width: 100%;
+            min-height: 6px;
+            margin-right: 0px;
+          }
+        }
+        .shape.first-color {
+          background-color: $purpleColor;
+          &:hover {
+            background-color: $whiteColor;
+          }
+        }
+        .shape.second-color {
+          background-color: $greenColor;
+          &:hover {
+            background-color: $whiteColor;
+          }
+        }
+        .part-one-edu {
+          flex-basis: 40%;
+          padding: 20px 0px;
+          display: flex;
+          align-items: center;
+          font-family: $OswaldFont;
+          @media (max-width: 991.98px) {
+            border-left: 6px solid $yellowColor;
+            padding-left: 20px;
+            width: 80%;
+          }
+          @keyframes slide-color {
+            0% {
+              color: $amaranthColor;
+            }
+            33% {
+              color: $greenColor;
+            }
+            66% {
+              color: $yellowColor;
+            }
+            100% {
+              color: $purpleColor;
+            }
+          }
+          i {
+            flex-basis: 110px;
+            display: block;
+            font-size: 90px;
+            margin-right: 20px;
+            color: $amaranthColor;
+            animation: slide-color 5s infinite normal ease-out;
+            transition: all 0.5s ease-in-out;
+            @media (max-width: 575.98px) {
+              font-size: 84px;
+            }
+            &:hover {
+              color: $whiteColor;
+            }
+          }
+          i.first-color {
+            color: $purpleColor;
+            &:hover {
+              color: $whiteColor;
+            }
+          }
+          i.second-color {
+            color: $greenColor;
+            &:hover {
+              color: $whiteColor;
+            }
+          }
+          .info-edu {
+            color: $textColor;
+            h3 {
+              font-size: 24px;
+              font-weight: 400;
+              @media (max-width: 575.98px) {
+                font-size: 20px;
+              }
+            }
+            h4 {
+              font-size: 22px;
+              font-weight: 400;
+              margin-bottom: 5px;
+              @media (max-width: 575.98px) {
+                font-size: 18px;
+              }
+            }
+            small {
+              font-size: 16px;
+              font-weight: 400;
+              @media (max-width: 575.98px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .part-two-edu {
+          flex-basis: 50%;
+          padding-right: 20px;
+          padding-bottom: 10px;
+          p {
+            font-size: 22px;
+            font-family: $OswaldFont;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: justify;
+            color: $textColor;
+            padding: 20px 20px;
+            @media (max-width: 991.98px) {
+              font-size: 20px;
+              border-right: 6px solid $amaranthColor;
+              border-bottom: 6px solid $amaranthColor;
+            }
+          }
+          p.first-color {
+            @media (max-width: 991.98px) {
+              border-right-color: $purpleColor;
+              border-bottom-color: $purpleColor;
+            }
+          }
+          p.second-color {
+            @media (max-width: 991.98px) {
+              border-right-color: $greenColor;
+              border-bottom-color: $greenColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .work-experience {
+    .work-container {
+      background-color: $secondColor;
+      display: grid;
+      padding: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      .card-work-exp {
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .languages {
+    .languages-container {
+      background-color: $secondColor;
+      padding: 20px 0px;
+      .linear-progress {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// End Resume Style

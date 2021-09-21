@@ -1,0 +1,25 @@
+@import "../sassFiles";
+
+.img-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgba(194, 194, 194, 0.2);
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.box-color {
+  border: 4px solid $yellowColor;
+  margin-top: 30px;
+  padding: 10px;
+  h2 {
+    font-family: $OswaldFont;
+    font-weight: 400;
+    color: $whiteColor;
+    text-transform: uppercase;
+  }
+}

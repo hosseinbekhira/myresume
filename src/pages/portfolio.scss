@@ -1,0 +1,54 @@
+@import "../sassFiles";
+@import "../components/popup.scss";
+
+.portfolio-container {
+  background-color: $mainColor;
+  min-height: 1000px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  .header-portofolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .list-category {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 750px;
+      gap: 15px;
+      list-style: none;
+      font-size: 20px;
+      font-family: $OswaldFont;
+      color: $whiteColor;
+      @media (max-width: 765.98px) {
+        width: 350px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      li {
+        text-align: center;
+        padding: 10px 5px;
+        border: 2px solid $greenColor;
+        width: 100%;
+        cursor: pointer;
+        background-color: $greenColor;
+        transition: background 100ms ease;
+        &:hover {
+          background-color: $greenThirdColor;
+        }
+      }
+      li.active {
+        background-color: $greenSecondColor;
+      }
+    }
+  }
+  .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .project-item {
+      margin: 0px 10px 20px;
+    }
+  }
+}
